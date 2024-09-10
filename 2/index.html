@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML - 2</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .container {
+                max-width: 90%;
+                width: 800px;
+                margin: 0 auto;
+            }
+            h1 {
+                text-align: center;
+                margin: 80px 0;
+            }
+            .shape {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                color: #FFF;
+                font-size: 24px;
+            }
+            .shape.red {
+                background: red;
+            }
+            .shape.green {
+                background: green;
+            }
+            .shape.blue {
+                background: blue;
+            }
+            @media only percy {
+                .shape.green {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Percy Test</h1>
+            <div class="shape red">Shape red</div>
+            <p>
+                Nam mollis porta purus quis elementum. Vivamus commodo odio dui, et rhoncus ante vehicula at. Duis dui sem, facilisis ut leo vitae, ornare maximus odio. Morbi a gravida turpis, interdum cursus augue. Nulla ultricies pulvinar scelerisque. Pellentesque vehicula erat eu.
+            </p>
+            <div class="shape green">Some random text here to see if Percy can see this</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pharetra arcu. Pellentesque ut blandit ligula. Maecenas porta varius nulla, id auctor dui rhoncus at. Aliquam auctor est augue, et sagittis enim accumsan non. Duis non ante eu neque mattis hendrerit ut et magna.
+            </p>
+            <div class="shape blue">Shape blue</div>
+        </div>
+    </body>
+</html>
