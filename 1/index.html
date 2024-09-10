@@ -34,7 +34,7 @@
             }
 
             @media only percy {
-                .shape.green {
+                .percy-hide {
                     opacity: 0;
                 }
             }
@@ -47,11 +47,16 @@
             <p>
                 Nam mollis porta purus quis elementum. Vivamus commodo odio dui, et rhoncus ante vehicula at. Duis dui sem, facilisis ut leo vitae, ornare maximus odio. Morbi a gravida turpis, interdum cursus augue. Nulla ultricies pulvinar scelerisque. Pellentesque vehicula erat eu.
             </p>
-            <div class="shape green">Shape green</div>
+            <div id="green" class="shape green">Shape green</div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pharetra arcu. Pellentesque ut blandit ligula. Maecenas porta varius nulla, id auctor dui rhoncus at. Aliquam auctor est augue, et sagittis enim accumsan non. Duis non ante eu neque mattis hendrerit ut et magna.
             </p>
             <div class="shape blue">Shape blue</div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(e) {
+                document.getElementById('green').classList.add('percy-hide');
+            });
+        </script>
     </body>
 </html>

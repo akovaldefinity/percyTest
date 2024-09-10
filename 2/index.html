@@ -33,7 +33,7 @@
                 background: blue;
             }
             @media only percy {
-                .shape.green {
+                .percy-hide {
                     opacity: 0;
                 }
             }
@@ -51,6 +51,11 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id pharetra arcu. Pellentesque ut blandit ligula. Maecenas porta varius nulla, id auctor dui rhoncus at. Aliquam auctor est augue, et sagittis enim accumsan non. Duis non ante eu neque mattis hendrerit ut et magna.
             </p>
             <div class="shape blue">Shape blue</div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function(e) {
+                    document.getElementById('green').classList.add('percy-hide');
+                });
+            </script>
         </div>
     </body>
 </html>
